@@ -15,20 +15,29 @@ sass:
 
 permalink: /posts/:title/
 texture:
-  title: Adam Denisov
-  tagline: Developer. Designer
+  title: Martin Hoffman
+  tagline: Backend Developer
   date_format: "%b %-d, %Y"
   style: black
-  showNav: false
-  showPicker: true
+  showNav: true
+  showPicker: false
 
   # generate social links in footer
   social_links:
-    twitter: thelehhman
-    github:  thelehhman
-    linkedIn: in/thelehhman
+    # blog:
+    github: lazylock
+    linkedIn: in/동헌-강-926444252
     rss: rss
+  
+  navigation:
+    - title: Algorithm
+      url: "/algorithm"
+    - title: Study
+      url: "/study"
+    - title: Project
+      url: "/project"
  
+ style: orange
 
 # If you want to link only specific pages in your header, uncomment
 # this and add the path to the pages in order as they should show up
