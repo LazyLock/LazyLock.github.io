@@ -1,0 +1,58 @@
+---
+layout: default
+---
+<div class="Container">
+  <div class="Header">
+    <h1>{{ site.texture.title }}</h1>
+    <h2 class="Subtitle">{{ site.texture.subtitle }}</h2>
+  </div>
+</div>
+
+
+{{ content }}
+<ul class="posts">
+  {% assign categories = page.categories | join: "-" %}
+  {% for post in site.posts %}
+    {% assign postCategories = post.categories | join: "-" %}
+    {% if categories == postCategories %}
+      <li>
+        <a href="./{{ post.url }}">{{ post.title }}</a>
+      </li>
+    {% endif %}
+    
+  {% endfor %}
+
+</ul>
+
+
+<style>
+  body {
+    font-family: "Nunito Sans", sans-serif;
+    margin: 0px !important;
+    -webkit-font-smoothing: antialiased;
+    -webkit-text-size-adjust: 100%;
+  }
+
+  .Container {
+  }
+  
+  .Header {
+    width: 100%;
+    background-image: url('{{ site.baseurl }}/assets/textures/black.jpg');
+    padding: 80px 0px 80px 80px;
+  }
+
+  .Header > h1 {
+    color: #fff;
+    font-size: calc(36px + 12 * ((100vw - 320px) / 960));
+    line-height: 1.2rem;
+  }
+  
+  .Header > h2 {
+    color: #999;
+    font-size: calc(28px + 4 * ((100vw - 320px) / 960));
+    font-weight: normal;
+    line-height: 1.2rem;
+    margin: 0px !important;
+  }
+</style>

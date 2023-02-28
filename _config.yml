@@ -1,10 +1,8 @@
-title: Texture Theme
-author: GitHub User
-email: your-email@domain.com
+title: LazyLock's Devlog
+author: LazyLock
+email: lazylock99@gmail.com
 description: > # this means to ignore newlines until "show_exerpts:"
-  Write an awesome description for your new site here. You can edit this
-  line in _config.yml. It will appear in your document head meta (for
-  Google search results) and in your feed.xml site description.
+  풀스택 개발과 데이터 분석을 공부중인 강동헌이라고 합니다.
 show_excerpts: true # set to true to show excerpts on the homepage
 # baseurl: /texture
 
@@ -16,7 +14,8 @@ sass:
 permalink: /posts/:title/
 texture:
   title: Martin Hoffman
-  tagline: Backend Developer
+  subtitle: Backend Developer
+  skills: with Node.js & Vue.js 
   date_format: "%b %-d, %Y"
   style: black
   showNav: true
@@ -24,20 +23,26 @@ texture:
 
   # generate social links in footer
   social_links:
-    # blog:
+    naver: lazylock99
     github: lazylock
     linkedIn: in/동헌-강-926444252
-    rss: rss
+    # rss: rss
   
   navigation:
     - title: Algorithm
-      url: "/algorithm"
+      url: "category/algorithm"
     - title: Study
-      url: "/study"
+      url: "category/study"
     - title: Project
-      url: "/project"
- 
-  style: orange
+      url: "category/project"
+  
+  tage:
+    - node.js
+    - vue.js
+    - javascript
+    - python
+
+
 
 # If you want to link only specific pages in your header, uncomment
 # this and add the path to the pages in order as they should show up

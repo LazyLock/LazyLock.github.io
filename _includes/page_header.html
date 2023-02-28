@@ -1,6 +1,7 @@
 <div class="container">
 	<h1>{{ site.texture.title }}</h1>
-	<h2>{{ site.texture.tagline }}</h2>
+	<h2 class="Subtitle">{{ site.texture.subtitle }}</h2>
+	<h4 class="Skills">{{ site.texture.skills }}</h4>
 	<ul class="social">
 		{%- if site.texture.social_links.github -%}
 			<a href="https://github.com/{{ site.texture.social_links.github }}"><li><i class="icon-github-circled"></i></li></a>
@@ -8,8 +9,20 @@
 		{%- if site.texture.social_links.linkedIn -%}
 			<a href="https://linkedin.com/{{ site.texture.social_links.linkedIn }}"><li><i class="icon-linkedin-squared"></i></li></a>
 		{%- endif -%}
-		{%- if site.texture.social_links.twitter -%}
-			<a href="https://twitter.com/{{ site.texture.social_links.twitter }}"><li><i class="icon-twitter-squared"></i></li></a>
+		{%- if site.texture.social_links.naver -%}
+			<a href="https://blog.naver.com/{{ site.texture.social_links.naver }}"><li><i class="icon-feather"></i></li></a>
 		{%- endif -%}
 	</ul>
 </div>
+
+<style>
+	.Subtitle {
+		margin-top: 20px !important;
+		margin-bottom: 0px !important;
+	}
+	.Skills {
+		color: #999 !important;
+		margin-top: 0px !important;
+		margin-bottom: 40px !important;
+	}
+</style>

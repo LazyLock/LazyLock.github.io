@@ -20,7 +20,7 @@ body {
 	font-family: 'Nunito Sans', sans-serif;
 	@include fluidType(16px, 19px);
 	line-height: 1.55em;
-	margin: 0;
+	margin: 0px !important;
 	-webkit-font-smoothing: antialiased;
 	-moz-osx-font-smoothing: grayscale;
 }
@@ -61,7 +61,7 @@ figcaption {
 
 header {
 	// background-size: cover;
-	padding: 120px 0;
+	padding: 80px 0;
 	color: #fff;
 	overflow: hidden;
 	h2 {
@@ -180,11 +180,11 @@ header {
 	padding: 0;
 	li {
 		float: left;
-		padding: 10px 20px;
+		padding: 0px 14px;
 		background-color: $lightGray;
 		color: #000;
 		margin: 5px;
-		border-radius: 2px;
+		border-radius: 4px;
 		@include fluidType(15px, 17px);
 		&:first-child {
 			margin-left: 0;
@@ -235,7 +235,6 @@ header {
 		list-style-type: none;
 		li {
 			// background-color: #ff9f1c;
-			border: 1px solid #fff;
 			float: left;
 			// margin: 5px;
 			&:not(:first-child){
