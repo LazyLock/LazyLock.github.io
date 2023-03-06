@@ -2,7 +2,7 @@ title: LazyLock's Devlog
 author: LazyLock
 email: lazylock99@gmail.com
 description: > # this means to ignore newlines until "show_exerpts:"
-  풀스택 개발과 데이터 분석을 공부중인 강동헌이라고 합니다.
+  풀스택 개발과 데이터 분석을 공부중인 강동헌의 기술블로그입니다.
 show_excerpts: true # set to true to show excerpts on the homepage
 # baseurl: /texture
 
@@ -29,12 +29,14 @@ texture:
     # rss: rss
   
   navigation:
+    - title: Home
+      url: "/"
     - title: Algorithm
-      url: "category/algorithm"
+      url: "algorithm"
     - title: Study
-      url: "category/study"
+      url: "study"
     - title: Project
-      url: "category/project"
+      url: "project"
   
   tage:
     - node.js

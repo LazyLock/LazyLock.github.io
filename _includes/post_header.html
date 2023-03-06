@@ -5,24 +5,46 @@
 	<div class="post-date" style="margin-top:20px">
 		Published on {{ page.date | date: date_format }}
 	</div>
-	<div class="Category">
-		<span>category : </span>
-		<ul class="post-tags">
-			{%- for tag in page.categories -%}
-				<li>{{ tag }}</li>
-			{%- endfor -%}
-		</ul>
+	<div class="CategoryTag">
+		<div class="Category">
+			<span>Category : </span>
+			<ul class="post-categories">
+				{%- for tag in page.categories -%}
+					<li>{{ tag }}</li>
+				{%- endfor -%}
+			</ul>
+		</div>
+		<div class="Tag">
+			<span>Tags : </span>
+			<ul class="post-tags">
+				{%- for tag in page.tags -%}
+				<a class="label" href="{{ '/tags' | prepend: site.baseurl }}"><li>{{ tag }}</li></a>
+				{%- endfor -%}
+			</ul>
+		</div>
 	</div>
 </div>
 
 <style>
-	.Category {
+	li {
+		list-style: none;
+		font-size: 14px;
+	}
+
+	.CategoryTag > div {
 		display: flex;
 		flex-direction: row;
 		align-items: center;
+		height: 40px !important;
 	}
-	.Category > span {
+
+	.CategoryTag > .Category {
+		margin-top: 10px !important;
+	}
+
+	.CategoryTag > div > span {
 		margin-right: 20px;
 		color: #999;
+		font-size: 16px !important;
 	}
 </style>

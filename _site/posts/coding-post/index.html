@@ -5,6 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="ie=edge">
 <link href="https://fonts.googleapis.com/css?family=Nunito+Sans:400,400i,700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="/assets/css/style.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
 <title>Coding Post</title>
 <!-- Begin Jekyll SEO tag v2.8.0 -->
 <title>Coding Post | LazyLock’s Devlog</title>
@@ -30,11 +31,13 @@
     <div class="container"><div class="navbar">
 	<ul>
 		
-		<a href="category/algorithm"><li  >Algorithm</li></a>
+		<a href="/"><li  >Home</li></a>
 		
-		<a href="category/study"><li  >Study</li></a>
+		<a href="algorithm"><li  >Algorithm</li></a>
 		
-		<a href="category/project"><li  >Project</li></a>
+		<a href="study"><li  >Study</li></a>
+		
+		<a href="project"><li  >Project</li></a>
 		
 	</ul>
 </div></div><div class="container">
@@ -43,21 +46,39 @@
 	<div class="post-date" style="margin-top:20px">
 		Published on May 24, 2019
 	</div>
-	<div class="Category">
-		<span>category : </span>
-		<ul class="post-tags"><li>Project</li></ul>
+	<div class="CategoryTag">
+		<div class="Category">
+			<span>Category : </span>
+			<ul class="post-categories"><li>Project</li></ul>
+		</div>
+		<div class="Tag">
+			<span>Tags : </span>
+			<ul class="post-tags"><a class="label" href="/tags"><li>node.js</li></a><a class="label" href="/tags"><li>javascript</li></a></ul>
+		</div>
 	</div>
 </div>
 
 <style>
-	.Category {
+	li {
+		list-style: none;
+		font-size: 14px;
+	}
+
+	.CategoryTag > div {
 		display: flex;
 		flex-direction: row;
 		align-items: center;
+		height: 40px !important;
 	}
-	.Category > span {
+
+	.CategoryTag > .Category {
+		margin-top: 10px !important;
+	}
+
+	.CategoryTag > div > span {
 		margin-right: 20px;
 		color: #999;
+		font-size: 16px !important;
 	}
 </style></header>
   <main>
