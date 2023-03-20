@@ -193,6 +193,7 @@ header {
 }
 
 .post-tags {
+	display: flex;
 	list-style-type: none;
 	padding: 0;
 	li {
@@ -258,6 +259,23 @@ header {
 	color: #F0A04B;
 }
 
+.CustomTag {
+	background-color: #ddd;
+	margin-left: 8px;
+	border-radius: 20px;
+}
+
+.CustomTag > span:hover {
+	color: #F0A04B;
+}
+
+.CustomTag > span {
+	color: black;
+	font-size: 14px;
+	padding: 0px 12px;
+}
+
+
 .material-icons {
 	color: #F0A04B;
 }
@@ -300,3 +318,6 @@ header {
 	}
 }
 
+.PageLayout {
+	display: flex;
+}

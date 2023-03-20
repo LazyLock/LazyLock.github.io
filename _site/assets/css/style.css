@@ -532,7 +532,8 @@ div.highlight {
 pre.highlight, code {
   font-family: "Consolas", Menlo, monospace;
   line-height: 1.4em;
-  tab-size: 4;
+  tab-size: 2;
+  font-size: 16px !important;
   background-color: #f4f4f4;
 }
 
@@ -773,6 +774,7 @@ header .social li i:hover {
 }
 
 .post-tags {
+  display: flex;
   list-style-type: none;
   padding: 0;
 }
@@ -848,6 +850,22 @@ header .social li i:hover {
   color: #F0A04B;
 }
 
+.CustomTag {
+  background-color: #ddd;
+  margin-left: 8px;
+  border-radius: 20px;
+}
+
+.CustomTag > span:hover {
+  color: #F0A04B;
+}
+
+.CustomTag > span {
+  color: black;
+  font-size: 14px;
+  padding: 0px 12px;
+}
+
 .material-icons {
   color: #F0A04B;
 }
@@ -893,6 +911,10 @@ header .social li i:hover {
 }
 .navbar ul li.active {
   color: #F99417;
+}
+
+.PageLayout {
+  display: flex;
 }
 
 .texture-black {

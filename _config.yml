@@ -14,8 +14,8 @@ sass:
 permalink: /posts/:title/
 texture:
   title: Martin Hoffman
-  subtitle: Backend Developer
-  skills: with Node.js & Vue.js 
+  subtitle: Web Developer & Data Scientist
+  skills: with Python,  Node.js & Vue.js
   date_format: "%b %-d, %Y"
   style: black
   showNav: true
